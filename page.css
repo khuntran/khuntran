@@ -1,0 +1,401 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.section {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section1 {
+    width: 1920px;
+    height: 1097px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url('/images/bg1.jpeg');
+    background-size: cover; 
+    background-position: center; 
+}
+
+.subsection1 {
+    display: flex;
+}
+
+.subsection1.top {
+    flex: 1; 
+}
+
+.div-po-t{
+    padding-top: 50px;
+    padding-left: 48px;
+    padding-right: 48px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+}
+
+.div-po-left{
+    flex: 2; 
+}
+
+.div-po-center{
+    flex: 7; 
+}
+
+.div-po-right{
+    flex: 1; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.div-po-icon{
+    padding-right: 24px;
+}
+
+.label-po{
+    color: #FFF;
+    font-family: "Helvetica Neue";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.subsection1.bottom {
+    flex: 9; 
+    display: flex;
+    flex-direction: row;
+}
+
+.div-po-p{
+    padding-left: 200px;
+    padding-right: 180px;
+    display: flex;
+    flex-direction: row;
+}
+
+.div-po-p-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.div-po-p-b1{
+    padding-top: 100px;
+    width: 900px;
+}
+
+.div-po-p-b2{
+    padding-top: 50px;
+    width: 800px;
+}
+
+.div-po-p-b3{
+    padding-top: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.label-b1{
+    color: #FFF;
+    font-family: "Hyundai Sans Head";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 77px */
+    letter-spacing: -2.1px;
+    text-transform: uppercase;
+}
+.label-b2{
+    color: #FFF;
+    font-family: "Helvetica Neue";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%; /* 30.8px */
+    letter-spacing: -0.44px;
+}
+.label-b3{
+    padding-left: 16px;
+    color: #FFF;
+    font-family: "Helvetica Neue";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%; /* 26.1px */
+    letter-spacing: -0.36px;
+}
+
+.div-po-p-right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.section2 {
+    background-color: white;
+    width: 1920px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-my-shills{
+    margin-top: 140px;
+    margin-bottom: 140px;
+    margin-left: 220px;
+}
+
+.div-1{
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.div-1-1{
+    width: 150px;
+}
+
+.div-1-2{
+    height: 64px;
+}
+
+.l1{
+    color: var(--TEXT, #302825);
+    font-family: "Hyundai Sans Head";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 77px */
+    letter-spacing: -2.1px;
+    text-transform: uppercase;
+}
+
+.l2{
+    color: var(--BLUE, #014FB2);
+    font-family: "Hyundai Sans Head";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -2.1px;
+    text-transform: uppercase;
+}
+
+.l3{
+    color: var(--TEXT, #302825);
+    font-family: "Helvetica Neue";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 145%; /* 34.8px */
+    letter-spacing: -0.48px;
+}
+
+.l4{
+    color: var(--TEXT, #302825);
+    font-family: "Helvetica Neue";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%; /* 34.8px */
+    letter-spacing: -0.48px;
+}
+
+.l5{
+    color: var(--GRAY, #8A807D);
+    font-family: "Helvetica Neue";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+    letter-spacing: -0.48px;
+}
+.l6{
+    color: var(--TEXT, #302825);
+    font-family: "Hyundai Sans Head";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 28.6px */
+    letter-spacing: -0.78px;
+    text-transform: uppercase;
+}
+
+.section3 {
+    background-color: white;
+    width: 1920px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-wk-epx{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 220px;
+    margin-right: 220px;
+}
+.div-2{
+    display: flex;
+    flex-direction: row;
+}
+
+.div-2-1{
+    height: 48px;
+}
+
+.div-2-2{
+    width: 20%;
+}
+
+.div-2-5{
+    width: 80%;
+}
+
+.div-2-3{
+    padding-left: 15px;
+}
+
+.div-2-4{
+    height: 64px;
+}
+
+.l7{
+    color: var(--BLUE, #014FB2);
+    font-family: "Helvetica Neue";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 145%; /* 37.7px */
+    letter-spacing: -0.52px;
+}
+
+.l8{
+    color: var(--GRAY, #8A807D);
+    font-family: "Helvetica Neue";
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 145%; /* 34.8px */
+    letter-spacing: -0.48px;
+}
+
+.section4 {
+    width: 1920px;
+    display: flex;
+    flex-direction: row;
+    background-color: #000E31;
+}
+
+.div-4{
+    width: 1500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-4-1{
+    margin-top: 64px;
+    padding-bottom: 64px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+}
+
+.div-4-1-1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-4-1-1-1{
+    display: flex;
+    flex-direction: row;
+}
+
+.div-4-1-2{
+    width: 50%;
+}
+
+.div-4-2{
+    margin-top: 64px;
+    padding-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+}
+
+.l9{
+    color: rgba(255, 255, 255, 0.60);
+    font-family: "Helvetica Neue";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%; /* 29px */
+    letter-spacing: -0.4px;
+}
+
+.l10{
+    color: rgba(255, 255, 255, 0.40);
+    font-family: "Helvetica Neue";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%; /* 29px */
+    letter-spacing: -0.4px;
+}
+
+.l11{
+    color: #FFF;
+
+    font-family: "Helvetica Neue";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 44px */
+    letter-spacing: -0.8px;
+}
+
+.section5 {
+    width: 1920px;
+    height: 500px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url('/images/bg1.jpeg');
+    background-size: cover; 
+    background-position: center; 
+}
+
+.button1 {
+    display: inline-block; /* Để nút có thể nằm trên cùng dòng với các phần tử khác */
+    padding: 10px 20px; /* Khoảng cách bên trong nút */
+    font-size: 16px; /* Kích thước chữ */
+    color: #FFFFFF; /* Màu chữ */
+    text-align: center; /* Canh giữa chữ */
+    text-decoration: none; /* Bỏ gạch chân của liên kết */
+    border: 1px solid #FFFFFF; /* Viền của nút */
+    border-radius: 8px; /* Bo tròn các góc của nút */
+    background-color: transparent; /* Nền trong suốt */
+    transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển đổi khi hover */
+}
+
+.button2 {
+    display: inline-block; /* Để nút có thể nằm trên cùng dòng với các phần tử khác */
+    padding: 10px 20px; /* Khoảng cách bên trong nút */
+    font-size: 16px; /* Kích thước chữ */
+    color: #FFFFFF; /* Màu chữ */
+    text-align: center; /* Canh giữa chữ */
+    text-decoration: underline; /* Gạch chân chữ */
+    border: 1px solid #FFFFFF; /* Viền của nút */
+    border-radius: 8px; /* Bo tròn các góc của nút */
+    background-color: transparent; /* Nền trong suốt */
+    transition: background-color 0.3s, color 0.3s;
+}
