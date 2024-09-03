@@ -141,6 +141,9 @@ body, html {
     border-radius: 16px;
     height: 360px;
 }
+.class-img3 {
+    border-radius: 16px;
+}
 
 .subsection1.bottom {
     flex: 9; 
