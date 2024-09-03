@@ -2,10 +2,19 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: "Inter", sans-serif;
 }
 
 .section {
-    height: 20%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.overdiv {
+    width: 1200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,10 +22,12 @@ body, html {
 }
 
 .section1 {
-    width: 1920px;
+    width: 100%;
     height: 1097px;
     flex-shrink: 0;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     background-size: cover; 
     background-position: center; 
@@ -29,24 +40,25 @@ body, html {
 
 .subsection1.top {
     flex: 1; 
+    width: 100%;
 }
 
-.div-po-t{
+.div-po-t {
     padding-top: 50px;
     padding-left: 48px;
     padding-right: 48px;
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: top;
+    align-items: center;
+    justify-content: space-between; 
 }
 
 .div-po-left{
-    flex: 2; 
-}
-
-.div-po-center{
-    flex: 7; 
+    flex: 1; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .div-po-right{
@@ -54,19 +66,80 @@ body, html {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-end;
+}
+
+.div-po-right2{
+    flex: 1; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .div-po-icon{
     padding-right: 24px;
+    position: relative;
+    display: inline-block;
+}
+
+.email-tooltip {
+    visibility: hidden; /* Ẩn địa chỉ email ban đầu */
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    top: 125%; /* Đặt vị trí của tooltip phía dưới icon */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.email-tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: 100%; /* Đặt mũi tên của tooltip phía trên tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #555 transparent;
+}
+
+.div-po-icon:hover .email-tooltip {
+    visibility: visible;
+    opacity: 1; /* Hiển thị tooltip khi hover */
 }
 
 .label-po{
     color: #FFF;
-    font-family: "Helvetica Neue";
+    ;
     font-size: 25px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+.menu-po-check{
+    color: #FFF;
+    ;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.class-img2 {
+    border-radius: 16px;
+}
+
+.class-img3-m {
+    border-radius: 16px;
+    height: 360px;
 }
 
 .subsection1.bottom {
@@ -76,10 +149,11 @@ body, html {
 }
 
 .div-po-p{
-    padding-left: 200px;
-    padding-right: 180px;
     display: flex;
     flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; 
 }
 
 .div-po-p-left{
@@ -101,11 +175,12 @@ body, html {
     padding-top: 200px;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .label-b1{
     color: #FFF;
-    font-family: "Hyundai Sans Head";
+    ;
     font-size: 70px;
     font-style: normal;
     font-weight: 700;
@@ -115,7 +190,7 @@ body, html {
 }
 .label-b2{
     color: #FFF;
-    font-family: "Helvetica Neue";
+    ;
     font-size: 22px;
     font-style: normal;
     font-weight: 300;
@@ -125,7 +200,7 @@ body, html {
 .label-b3{
     padding-left: 16px;
     color: #FFF;
-    font-family: "Helvetica Neue";
+    ;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -142,9 +217,11 @@ body, html {
 
 .section2 {
     background-color: white;
-    width: 1920px;
+    width: 100%;
     flex-shrink: 0;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -170,7 +247,7 @@ body, html {
 
 .l1{
     color: var(--TEXT, #302825);
-    font-family: "Hyundai Sans Head";
+    
     font-size: 70px;
     font-style: normal;
     font-weight: 700;
@@ -181,7 +258,7 @@ body, html {
 
 .l2{
     color: var(--BLUE, #014FB2);
-    font-family: "Hyundai Sans Head";
+    
     font-size: 70px;
     font-style: normal;
     font-weight: 700;
@@ -192,7 +269,7 @@ body, html {
 
 .l3{
     color: var(--TEXT, #302825);
-    font-family: "Helvetica Neue";
+    ;
     font-size: 24px;
     font-style: normal;
     font-weight: 300;
@@ -202,7 +279,7 @@ body, html {
 
 .l4{
     color: var(--TEXT, #302825);
-    font-family: "Helvetica Neue";
+    ;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -212,7 +289,7 @@ body, html {
 
 .l5{
     color: var(--GRAY, #8A807D);
-    font-family: "Helvetica Neue";
+    ;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -221,7 +298,7 @@ body, html {
 }
 .l6{
     color: var(--TEXT, #302825);
-    font-family: "Hyundai Sans Head";
+    
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
@@ -232,17 +309,21 @@ body, html {
 
 .section3 {
     background-color: white;
-    width: 1920px;
+    width: 100%;
     flex-shrink: 0;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
 .div-wk-epx{
     margin-top: 100px;
     margin-bottom: 100px;
-    margin-left: 220px;
-    margin-right: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 440px);
+    max-width: 1200px; 
 }
 .div-2{
     display: flex;
@@ -271,7 +352,7 @@ body, html {
 
 .l7{
     color: var(--BLUE, #014FB2);
-    font-family: "Helvetica Neue";
+    ;
     font-size: 26px;
     font-style: normal;
     font-weight: 500;
@@ -281,7 +362,7 @@ body, html {
 
 .l8{
     color: var(--GRAY, #8A807D);
-    font-family: "Helvetica Neue";
+    ;
     font-size: 24px;
     font-style: italic;
     font-weight: 400;
@@ -290,14 +371,16 @@ body, html {
 }
 
 .section4 {
-    width: 1920px;
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
     background-color: #000E31;
 }
 
 .div-4{
-    width: 1500px;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -308,6 +391,7 @@ body, html {
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+    gap: 20px;
 }
 
 .div-4-1-1{
@@ -317,6 +401,11 @@ body, html {
 }
 
 .div-4-1-1-1{
+    display: flex;
+    flex-direction: row;
+}
+
+.div-4-1-1-1-m{
     display: flex;
     flex-direction: row;
 }
@@ -334,7 +423,7 @@ body, html {
 
 .l9{
     color: rgba(255, 255, 255, 0.60);
-    font-family: "Helvetica Neue";
+    ;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -344,7 +433,7 @@ body, html {
 
 .l10{
     color: rgba(255, 255, 255, 0.40);
-    font-family: "Helvetica Neue";
+    ;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -355,7 +444,7 @@ body, html {
 .l11{
     color: #FFF;
 
-    font-family: "Helvetica Neue";
+    ;
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
@@ -364,10 +453,22 @@ body, html {
 }
 
 .section5 {
-    width: 1920px;
+    background-color: white;
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section6 {
+    width: 100%;
     height: 500px;
     flex-shrink: 0;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     background-image: url('./images/bg1.jpeg');
     background-size: cover; 
@@ -398,4 +499,270 @@ body, html {
     border-radius: 8px; /* Bo tròn các góc của nút */
     background-color: transparent; /* Nền trong suốt */
     transition: background-color 0.3s, color 0.3s;
+}
+
+.div-5{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.div-5-1{
+    width: 40%;
+}
+.div-5-2{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.div-5-2-1{
+    height: 286px;
+    display: flex;
+    flex-direction: row;
+}
+
+.div-5-3{
+    width: 82%;
+}
+.div-5-4{
+    width: 19%;
+}
+
+.div-5-5{
+    width: 42%;
+}
+.div-5-6{
+    width: 16%;
+}
+
+/* CSS để bỏ màu nền của nút */
+.btn-transparent {
+    background-color: transparent !important; /* Bỏ màu nền */
+    border: none; /* Bỏ viền */
+    padding: 0; /* Bỏ padding để chỉ hiện icon */
+}
+
+.btn-transparent:focus, 
+.btn-transparent:hover {
+    background-color: transparent !important; /* Giữ nền trong suốt khi hover hoặc focus */
+}
+
+/* CSS để ẩn mũi tên bên phải */
+.btn-transparent.dropdown-toggle::after {
+    display: none; /* Ẩn mũi tên của dropdown */
+}
+
+/* CSS để đảm bảo menu không bị thay đổi vị trí */
+.dropdown-menu {
+    position: absolute; /* Cố định vị trí của menu */
+    top: 100%; /* Đặt menu hiển thị ngay bên dưới nút */
+    left: 0; /* Đặt menu căn lề trái */
+    border-radius: 20px; /* Đặt border-radius */
+    background: rgba(255, 255, 255, 0.05) !important; /* Đặt màu nền với độ trong suốt */
+    backdrop-filter: blur(100px); /* Áp dụng hiệu ứng làm mờ nền */
+    padding: 10px; /* Thêm padding cho menu */
+    border: none; /* Bỏ viền mặc định của menu */
+    box-shadow: none; /* Bỏ bóng mặc định của menu */
+    display: none; /* Mặc định ẩn menu */
+    z-index: 1000; /* Đảm bảo menu hiển thị trên các phần tử khác */
+}
+
+/* CSS cho các mục trong menu */
+.dropdown-item {
+    color: white !important; /* Đặt màu chữ thành trắng */
+    background: transparent !important; /* Bỏ màu nền của các mục để chữ trắng vẫn rõ ràng */
+}
+
+/* CSS cho các mục khi hover */
+.dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.1) !important; /* Thay đổi màu nền khi hover để giữ rõ ràng chữ trắng */
+    color: white !important; /* Đảm bảo màu chữ vẫn là trắng khi hover */
+}
+
+/* CSS để đảm bảo menu hiển thị đúng */
+.dropdown-menu.show {
+    display: block; /* Đảm bảo menu hiển thị khi được kích hoạt */
+}
+
+.scroll-downs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width :20px;
+    height: 40px;
+  }
+  .mousey {
+    width: 3px;
+    padding: 5px 10px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+  .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+  }
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+  }
+
+/* Media Queries cho thiết bị di động */
+@media (max-width: 844px) {
+
+    .section {
+        max-width: 100%; /* Đặt chiều rộng tối đa là 100% để phù hợp với màn hình nhỏ hơn */
+    }
+
+    .overdiv {
+        width: 100%; /* Đặt chiều rộng 100% để phù hợp với màn hình nhỏ hơn */
+    }
+
+    .section1 {
+        width: 100%;
+        height: auto; /* Đặt chiều cao tự động để phù hợp với nội dung trên màn hình nhỏ */
+        background-size: cover;
+        background-position: center;
+        margin: 0 auto;
+    }
+    .div-po-t {
+        padding: 20px; /* Giảm padding để phù hợp với màn hình nhỏ */
+        flex-direction: row; /* Chuyển sang bố cục cột */
+        align-items: flex-start; /* Căn lề trái cho các phần tử */
+    }
+
+    .div-po-left {
+        flex-direction: column; /* Chuyển sang bố cục cột */
+        align-items: flex-start; /* Căn lề trái cho các phần tử */
+    }
+
+    .div-po-right{
+        padding-top: 5px;
+        flex-direction: row; /* Chuyển sang bố cục cột */
+        align-items: center; /* Căn lề trái cho các phần tử */
+    }
+
+    .div-po-right2 {
+        flex-direction: row; /* Chuyển sang bố cục cột */
+        align-items: flex-start; /* Căn lề trái cho các phần tử */
+    }
+
+    .div-po-icon {
+        padding-right: 10px; /* Loại bỏ padding bên phải cho màn hình nhỏ */
+    }
+
+    .email-tooltip {
+        font-size: 14px; /* Giảm kích thước font */
+        padding: 4px 8px; /* Giảm padding */
+        top: 100%; /* Đặt tooltip ngay dưới icon */
+    }
+
+    .section2, .section3, .section4, .section5, .section6 {
+        padding: 20px; /* Thêm padding để tránh nội dung sát lề trên thiết bị di động */
+        width: 100%; /* Đặt chiều rộng 100% để phù hợp với màn hình nhỏ */
+    }
+
+    .div-my-shills {
+        margin: 80px 20px; /* Giảm margin cho màn hình nhỏ */
+    }
+
+    .div-4-1, .div-4-2 {
+        flex-direction: column; /* Chuyển sang bố cục cột */
+        width: 100%; /* Đặt chiều rộng 100% để phù hợp với màn hình nhỏ */
+    }
+
+    .div-4-1-1, .div-4-1-2 {
+        width: 100%; /* Đặt chiều rộng 100% để phù hợp với màn hình nhỏ */
+    }
+
+    .div-po-p{
+        flex-direction: column; /* Chuyển sang bố cục cột */
+        width: 100%; /* Đặt chiều rộng 100% để phù hợp với màn hình nhỏ */
+    }
+
+    .div-po-p-left {
+        flex-direction: column; /* Chuyển sang bố cục cột */
+        width: 100%; /* Đặt chiều rộng 100% để phù hợp với màn hình nhỏ */
+    }
+    
+    .div-po-p-b1, .div-po-p-b2 {
+        padding-left: 20px;
+        padding-top: 20px; /* Padding trên */
+        width: 100%; /* Đảm bảo chiều rộng 100% */
+        box-sizing: border-box; /* Đảm bảo padding không làm vượt quá chiều rộng */
+    }
+
+    .label-b1, .label-b2, .label-b3 {
+        font-size: 20px; /* Giảm kích thước chữ */
+    }
+
+    .div-wk-epx {
+        width: calc(100% - 40px); /* Giảm bớt width để phù hợp với màn hình nhỏ */
+        margin: 0 20px; /* Giảm margin để phù hợp với màn hình nhỏ */
+    }
+    .div-2{
+        flex-direction: column; /* Chuyển sang bố cục cột */
+        width: 100%; /* Đặt chiều rộng 100% để phù hợp với màn hình nhỏ */
+    }
+    .div-2-2, .div-2-5, .div-5-4, .div-5-5, .div-5-6 {
+        width: 100%; /* Đặt chiều rộng 100% để phù hợp với màn hình nhỏ */
+    }
+
+    .div-5-2-1 {
+        width: 100%; 
+        flex-direction: column; 
+        height: 1100px;
+    }
+
+    .div-5, .div-5-1, .div-5-2, .div-5-3{
+        width: 100%; 
+        flex-direction: column; 
+    }
+
+    .l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8 , .menu-po-check{
+        font-size: 18px; /* Giảm kích thước chữ */
+    }
+
+    .class-img {
+        max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của phần tử chứa */
+        height: auto; /* Giữ tỷ lệ khung hình của hình ảnh */
+    }
+    .class-img2 {
+        border-radius: 4px;
+        width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của phần tử chứa */
+        height: 100%; /* Giữ tỷ lệ khung hình của hình ảnh */
+    }
+    .class-img3 {
+        border-radius: 4px;
+        max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của phần tử chứa */
+        height: auto; /* Giữ tỷ lệ khung hình của hình ảnh */
+    }
+    .mobile {
+        height: 5px;
+    }
+    .mobile2 {
+        height: 10px;
+    }
+    .div-4-1-1-1-m{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .class-img3-m {
+        border-radius: 4px;
+        width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của phần tử chứa */
+        height: 100%; /* Giữ tỷ lệ khung hình của hình ảnh */
+    }
 }
