@@ -185,12 +185,10 @@ body, html {
 
 .label-b1{
     color: #FFF;
-    ;
     font-size: 70px;
     font-style: normal;
     font-weight: 700;
     line-height: 110%; /* 77px */
-    letter-spacing: -2.1px;
     text-transform: uppercase;
 }
 .label-b2{
@@ -769,5 +767,13 @@ body, html {
         border-radius: 4px;
         width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của phần tử chứa */
         height: 100%; /* Giữ tỷ lệ khung hình của hình ảnh */
+    }
+    .div-po-p-b3{
+        padding-top: 50px;
+        padding-left: 20px;
+    }
+    .div-po-p-b3-n{
+        padding-top: 50px;
+        padding-left: 20px;
     }
 }
