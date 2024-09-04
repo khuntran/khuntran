@@ -250,23 +250,19 @@ body, html {
 
 .l1{
     color: var(--TEXT, #302825);
-    
     font-size: 70px;
     font-style: normal;
     font-weight: 700;
     line-height: 110%; /* 77px */
-    letter-spacing: -2.1px;
     text-transform: uppercase;
 }
 
 .l2{
     color: var(--BLUE, #014FB2);
-    
     font-size: 70px;
     font-style: normal;
     font-weight: 700;
     line-height: 110%;
-    letter-spacing: -2.1px;
     text-transform: uppercase;
 }
 
@@ -301,12 +297,10 @@ body, html {
 }
 .l6{
     color: var(--TEXT, #302825);
-    
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
     line-height: 110%; /* 28.6px */
-    letter-spacing: -0.78px;
     text-transform: uppercase;
 }
 
@@ -622,6 +616,13 @@ body, html {
     100% { transform: translateY(15px); opacity: 0;}
   }
 
+  .div-1-m{
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 /* Media Queries cho thiết bị di động */
 @media (max-width: 844px) {
 
@@ -734,8 +735,12 @@ body, html {
         flex-direction: column; 
     }
 
-    .l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8 , .menu-po-check{
-        font-size: 18px; /* Giảm kích thước chữ */
+    .l11{
+        font-size: 18px; 
+    }
+
+    .l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8 ,.l10, .menu-po-check, .label-b2, .label-b3{
+        font-size: 14px; /* Giảm kích thước chữ */
     }
 
     .class-img {
@@ -775,5 +780,64 @@ body, html {
     .div-po-p-b3-n{
         padding-top: 50px;
         padding-left: 20px;
+    }
+
+    .div-1 {
+        flex-direction: column; /* Chuyển sang bố cục cột */
+        width: 100%; /* Đặt chiều rộng 100% để phù hợp với màn hình nhỏ */
+    }
+
+    .dropdown-item {
+        margin-top: 40px;
+        margin-bottom: 32px;
+        margin-left: 32px;
+        margin-right: 40px;
+    }
+
+    .div-1-2{
+        height: 12px;
+    }
+
+    .div-2-1{
+        height: 12px;
+    }
+
+    .div-2-4{
+        height: 24px;
+    }
+
+    .div-24{
+        display: 18px;
+    }
+
+    .div-4-1-1-1{
+        justify-content: space-between; 
+    }
+
+    .div-25{
+        display: none;
+    }
+
+    .div-5-2-m{
+        width: 50%;
+    }
+
+    .div-26{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+    }
+
+    .div-27{
+        height: 18px;
+    }
+
+    .button1, .button2 {
+        font-size: 14px; /* Kích thước chữ */
+    }
+
+    .label-po{
+        font-size: 16px;
     }
 }
